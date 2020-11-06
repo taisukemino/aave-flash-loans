@@ -1,0 +1,17 @@
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# dotenv environment variables file
+.env
+.env.test
+
+# Truffle contract build files
+build/contracts
