@@ -23,12 +23,6 @@
    npm install -g ganache-cli
    ```
 
-   ```
-   ganache-cli
-   ```
-
-   \*In `truffle-config.js`, ensure the details for the `development` network match up with your running Ganache instance.
-
 2. _Fork_ and mirror mainnet into your Ganache instance.
    You can fork mainnet and use each protocol's production contracts and production ERC20 tokens.
    Replace `INFURA_API_KEY` with the value in the following and run:
