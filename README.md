@@ -17,7 +17,7 @@
 
 # Deploy to a Local Ganache Instance That Mirrors the Mainnet
 
-1. Install and Run the [Ganache CLI](https://github.com/trufflesuite/ganache-cli)
+1. Install the [Ganache CLI](https://github.com/trufflesuite/ganache-cli)
 
    ```
    npm install -g ganache-cli
