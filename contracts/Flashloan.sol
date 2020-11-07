@@ -94,7 +94,7 @@ contract FlashLoan is FlashLoanReceiverBase {
         uint256[] memory tokenBPurchased = uniswapV2Router02
             .swapExactTokensForTokens(
             _amount,
-            0,
+            1,
             path,
             address(this),
             deadline
