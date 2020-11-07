@@ -70,11 +70,14 @@
 
 # Interact With the Contract
 
-Call your contract's flashLoan function within the truffle console, replacing `RESERVE_ADDRESS` with the [reserve address](https://docs.aave.com/developers/developing-on-aave/deployed-contract-instances#reserves-assets) found in the Aave documentation:
+Call your contract's flashLoan function within the truffle console.
 
 ```
-let f = await FlashLoan.deployed()
-await f.flashLoan(RESERVE_ADDRESS)
+let instance = await FlashLoan.deployed()
+const DAI = "0x6b175474e89094c44da98b954eedeac495271d0f";
+const amount = 20; // specify the amount
+const USDC = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48";
+await instance.flashLoan(DAI, amount, USDC)
 ```
 
 If your implementation is correct, then the transaction will succeed. If it fails/reverts, a reason will be given.
@@ -86,11 +89,6 @@ If your implementation is correct, then the transaction will succeed. If it fail
 # EOA Address
 
 We are using this EOA address `0xcc84e428b30ea976f932d77293df4ba8edd7307f`.
-
-# Token Addresses
-
-- [DAI](https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f)
-- [USDC](https://etherscan.io/address/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48)
 
 # Known issues
 
